@@ -29,7 +29,7 @@ export default {
   methods: {
     ...mapActions(['fetchPacket']),
     onSubmit() {
-      this.fetchPacket(this.title);
+      this.fetchPacket(this.title.toLowerCase());
       this.title = '';
     },
   },
