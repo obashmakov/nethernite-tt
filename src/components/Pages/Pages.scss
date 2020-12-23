@@ -1,0 +1,44 @@
+.pages {
+  &__button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+
+    color: white;
+    line-height: 50px;
+
+    background-color: black;
+    border: none;
+    outline: none;
+    text-decoration: none;
+
+    transition: 300ms;
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+
+    &:hover {
+      background-color: rgb(179, 179, 179);
+      border-radius: 5px;
+    }
+  }
+}
+
+.active {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+@media(max-width: 520px) {
+  .pages {
+    &__button {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+    }
+  }
+}

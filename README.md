@@ -1,24 +1,11 @@
-# nethernite-tt
+# Nethernite-tt
 
-## Project setup
-```
-npm install
-```
+- [DEMO LINK](https://obashmakov.github.io/nethernite-tt/)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+This project was created using Vue.js, HTML/SCSS, BEM.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Installing
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+ - Fork and clone this repository
+ - Run npm install in your terminal
+ - Run npm start

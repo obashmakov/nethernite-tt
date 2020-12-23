@@ -1,0 +1,25 @@
+.table {
+  &__name {
+    text-align: left;
+  }
+
+  &__name {
+    width: 320px;
+    text-align: left;
+  }
+}
+
+.table-striped>tbody>tr:nth-of-type(odd),
+.table-striped>tbody>tr:nth-of-type(even) {
+  cursor: pointer;
+
+  &:hover {
+    --bs-table-accent-bg: #0d559d;
+  }
+}
+
+@media (max-width: 420px) {
+  .table {
+    font-size: 12px;
+  }
+}

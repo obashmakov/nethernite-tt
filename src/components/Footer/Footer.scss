@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    margin-bottom: 10px;
+    color: white;
+  }
+
+  &__gitlogo {
+    margin-bottom: 20px;
+    width: 60px;
+    height: 40px;
+    transition: 300ms;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__copyrights {
+    font-size: 11px;
+    color: rgb(158, 158, 158);
+  }
+}
