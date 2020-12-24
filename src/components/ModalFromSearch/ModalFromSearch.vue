@@ -7,13 +7,16 @@
         X
       </button>
       <div class="modal-window__csp">
-        {{ `CSP: ${packet.csp}` }}
+        {{ `CSP: ${packet.tags.csp}` }}
       </div>
       <div class="modal-window__latest">
-        {{ `Latest version: ${packet.latest}` }}
+        {{ `Latest version: ${packet.tags.latest}` }}
       </div>
       <div class="modal-window__next">
-        {{ `Next version: ${packet.next}` }}
+        {{ `Next version: ${packet.tags.next}` }}
+      </div>
+      <div class="modal-window__versions">
+        {{ `Last 3 versions: ${packet.versions.slice(0, 3).join(', ')}` }}
       </div>
     </div>
   </div>
@@ -23,7 +26,7 @@
 export default {
   props: {
     packet: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },

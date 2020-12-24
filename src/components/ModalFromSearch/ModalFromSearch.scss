@@ -31,7 +31,8 @@
 
   &__csp,
   &__latest,
-  &__next {
+  &__next,
+  &__versions {
     width: 100%;
     padding: 10px;
   }
@@ -46,6 +47,10 @@
 
   &__next {
     background-color: rgb(99, 185, 0);
+  }
+
+  &__versions {
+    background-color: rgb(250, 2, 2);
   }
 
   &__button {

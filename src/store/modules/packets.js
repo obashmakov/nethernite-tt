@@ -20,11 +20,18 @@ export default {
     },
 
     async fetchPacket({ commit }, title) {
-      const res = await fetch(
+      let res = await fetch(
         `https://data.jsdelivr.com/v1/package/npm/${title}`,
       );
+
       if (!res.ok) {
-        alert('Wrong package title. Try another one');
+        res = await fetch(
+          `https://data.jsdelivr.com/v1/package/gh/${title}`,
+        );
+      }
+
+      if (!res.ok) {
+        alert('Wrong package title. Please try another one.');
       }
 
       if (res.ok) {

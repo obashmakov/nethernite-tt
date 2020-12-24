@@ -6,7 +6,7 @@
     <Footer />
     <ModalFromServer
       v-if="findedPacket"
-      v-bind:packet="findedPacket.tags"
+      v-bind:packet="findedPacket"
       v-bind:findedPacket="findedPacket"
     />
   </div>
